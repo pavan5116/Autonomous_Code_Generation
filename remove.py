@@ -7,7 +7,7 @@ import subprocess
 
 
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyD4D82n6QJqllwif14MojSQgEm1KnHa33s"  # Or set as env variable
+os.environ["GOOGLE_API_KEY"] = "your-Google-api-key"  # Or set as env variable
 
 llm = ai(temperature=0, model="gemini-2.0-flash")
 

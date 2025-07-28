@@ -4,7 +4,7 @@ import subprocess
 from langchain_google_genai import GoogleGenerativeAI as ai
 from langchain.prompts import ChatPromptTemplate
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyD4D82n6QJqllwif14MojSQgEm1KnHa33s"  # insert your API key
+os.environ["GOOGLE_API_KEY"] = "insert your API key"
 
 llm = ai(temperature=0, model="gemini-2.0-flash")
 

@@ -1,5 +1,3 @@
-Of course! Here is a professionally styled `README.md` for your Streamlit AI Chatbot project, designed with a different, clean aesthetic that is common in modern open-source projects.
-
 # Streamlit AI Chatbot
 
 

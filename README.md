@@ -1,6 +1,9 @@
-# Autonomous Code Generation and Edit
+### Autonomous Code Generation and Edit
 
 **An intelligent Python command-line tool designed for autonomous code generation, reading, editing, and deletion of files using AI.**
+*🤖 Live Demo
+*<img width="1915" height="1019" alt="Screenshot (15)" src="https://github.com/user-attachments/assets/42bf03e9-6710-4613-9ec5-70911199bdff" />
+*
 
 ## ✨ Key Features
 

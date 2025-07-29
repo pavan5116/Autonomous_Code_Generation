@@ -1,137 +1,84 @@
-# 🛠️ Autonomous Code Generation & Edit
+Of course! Here is a professionally styled `README.md` for your Streamlit AI Chatbot project, designed with a different, clean aesthetic that is common in modern open-source projects.
 
-**An intelligent CLI assistant that bridges natural language and code through AI-powered automation**
+# Streamlit AI Chatbot
 
-Transform your development workflow with an interactive command-line tool that understands your intent and manipulates code files autonomously using Google's Gemini AI.
 
-## 🎯 What It Does
 
-This tool serves as your personal coding assistant, capable of:
 
-| Feature | Description |
-|---------|-------------|
-| **🤖 AI Code Generation** | Convert natural language instructions into working code |
-| **📖 File Reading** | Display file contents directly in your terminal |
-| **✂️ Smart Editing** | Remove specific lines or code snippets with precision |
-| **🗑️ Safe Deletion** | Delete files with confirmation prompts |
-| **💾 File Management** | Create new files or append to existing ones |
-| **🔍 Syntax Validation** | Automatically test generated code for errors |
 
-## 🚀 Quick Start
+A minimalist and powerful AI chatbot built with Streamlit and Google Gemini. This project provides a clean web interface for real-time conversations with a state-of-the-art language model.
 
-### Requirements
-- **Python 3.7+**
-- **Google API Key** for Gemini access
+### 🤖 Live Demo
 
-### Setup
+*(<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/43a16845-7dbe-4e72-9743-2b65bade3ec2" />
+)*
 
-1. **Get the code**
-   ```bash
-   git clone https://github.com/your-username/autonomous-code-generation-edit.git
-   cd autonomous-code-generation-edit
-   ```
 
-2. **Install dependencies**
-   ```bash
-   pip install langchain-google-genai langchain-core
-   ```
 
-3. **Configure API access**
-   
-   Replace the placeholder in the code with your actual Google API key:
-   ```python
-   os.environ["GOOGLE_API_KEY"] = "your-actual-api-key-here"
-   ```
+## Core Functionality
 
-4. **Launch the assistant**
-   ```bash
-   python main.py
-   ```
+-   **Real-time Interaction**: Engage in dynamic, real-time conversations with Google's Gemini model.
+-   **Intuitive UI**: A clean, responsive, and user-friendly interface powered by the Streamlit framework.
+-   **Lightweight & Simple**: Minimal dependencies and straightforward code, making it easy to run and modify.
+-   **Secure Configuration**: Designed to load your API key securely from environment variables.
 
-## 📋 Command Reference
+## Technology Stack
 
-### File Operations
+This project leverages a modern stack for AI application development:
+
+-   **Framework**: [Streamlit](https://streamlit.io/)
+-   **Language Model**: Google Gemini (`gemini-2.0-flash`)
+-   **LLM Orchestration**: [LangChain](https://www.langchain.com/)
+
+## Getting Started
+
+Follow these steps to get the chatbot running on your local machine.
+
+### Prerequisites
+
+-   Python 3.8 or newer
+-   An active Google API Key with access to the Gemini model.
+
+### 1. Clone the Repository
+
+First, clone the project to your local machine:
 ```bash
-# View file contents
-read filename.py
-
-# Remove specific lines
-remove filename.py lines 5-10
-
-# Remove code containing specific text
-remove filename.py "import pandas"
-
-# Delete a file (with confirmation)
-delete old_script.py
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 ```
 
-### AI Interactions
-Simply type any coding instruction in natural language:
+### 2. Install Dependencies
+
+Install the required Python packages using pip:
 ```bash
->> Create a function to sort a list of dictionaries by a specific key
->> Write a class for handling API requests with error handling
->> Generate a script to read CSV files and calculate averages
+pip install streamlit langchain-google-genai
 ```
 
-### Control Commands
+### 3. Configure Your API Key
+
+For security, the application loads your Google API Key from an environment variable.
+
+**On macOS/Linux:**
 ```bash
-exit    # Quit the application
+export GOOGLE_API_KEY="YOUR_API_KEY_HERE"
 ```
 
-## 🔧 Architecture
-
+**On Windows:**
+```powershell
+$env:GOOGLE_API_KEY="YOUR_API_KEY_HERE"
 ```
-┌─────────────────┐    ┌──────────────┐    ┌─────────────┐
-│   User Input    │───▶│  AI Engine   │───▶│ File System │
-│  (Natural Lang) │    │  (Gemini)    │    │   Handler   │
-└─────────────────┘    └──────────────┘    └─────────────┘
-         │                       │                  │
-         └───────────────────────┼──────────────────┘
-                                 ▼
-                        ┌─────────────────┐
-                        │ Syntax Checker  │
-                        │   & Validator   │
-                        └─────────────────┘
-```
+> **Note:** Remember to replace `"YOUR_API_KEY_HERE"` with your actual key. Do not commit your key directly into the source code.
 
-## 🎪 Example Session
+### 4. Run the Application
 
+Launch the Streamlit server:
 ```bash
-Welcome to the Simple AI Code Tool!
-Type your instruction (or 'exit' to quit):
-
->> Create a function to calculate fibonacci numbers
-
-Generated code:
-def fibonacci(n):
-    if n > yes
-
-Which file should I update? (e.g., my_script.py)
-Filename: math_utils.py
-
-Creating new file math_utils.py...
-Code saved to math_utils.py.
-
-Testing the updated file for syntax and runtime errors...
-✅ Code ran successfully!
+streamlit run app.py
 ```
+*(Replace `app.py` with the name of your Python script if it's different.)*
 
-## ⚡ Pro Tips
+Your default web browser will open a new tab with the running chatbot application.
 
-- **Be specific** in your instructions for better code generation
-- **Use descriptive filenames** to keep your projects organized  
-- **Test regularly** - the tool automatically validates syntax after saving
-- **Backup important files** before using remove/delete operations
+## License
 
-## 🤝 Contributing
-
-Found a bug or have a feature idea? We'd love your input!
-
-1. Fork the repository
-2. Create your feature branch
-3. Submit a pull request
-
-## 📜 License
-
-Licensed under the MIT License - see [LICENSE](LICENSE) for details.
-
+This project is licensed under the **MIT License**. See the `LICENSE` file in the repository for the full text.

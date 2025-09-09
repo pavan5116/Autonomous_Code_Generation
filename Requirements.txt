@@ -1,0 +1,11 @@
+# Core LangChain package (needed for ChatPromptTemplate import)
+langchain>=0.2.0,<0.4.0
+
+# LangChain core components (automatically installed with langchain, but explicit for clarity)
+langchain-core>=0.2.0,<0.4.0
+
+# Google Gemini integration for LangChain
+langchain-google-genai>=1.0.0,<3.0.0
+
+# Google Generative AI SDK (dependency of langchain-google-genai, but explicit for compatibility)
+google-generativeai>=0.7.0
